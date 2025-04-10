@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>LTC Burger</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="'https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap'"
+    />
+    <link rel="icon" href="./assets/logo-ltc-icon.png" type="image/x-icon" />
+    <title>LTC Burger's</title>
+  </head>
+  <body>
     <header id="header">
+      <div class="logo-area">
+        <img src="./assets/logo-ltc-icon.png" alt="Logo LTC Burgers" />
         <h2>LTC Burgers</h2>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Nosotros</a>
-            <a href="">Productos</a>
-            <a href="">Contacto</a>
-        </nav>
+      </div>
+      <nav>
+        <a class="seleccionado" href="">Inicio</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./productos.html">Productos</a>
+      </nav>
     </header>
-    <main id="main"></main>
-    <footer id="footer">
-        <div class="redes">
-            <a href="">INSTAGRAM</a>
-            <a href="">FACEBOOK</a>
-            <a href="">WHATSAPP</a>
+    <main id="main">
+      <div class="container-titulo-main">
+        <h2>LTC BURGERS</h2>
+        <h4>LAS MEJORES HAMBURGUESAS A UN SOLO CLIC</h4>
+      </div>
+      <div class="container-button-main">
+        <a href="./productos.html" class="btn-ver-menu">VER MENU</a>
+        <hr class="linea-gruesa" />
+      </div>
+      <section class="section-comentarios">
+        <h3 class="titulo-comentarios">Lo que dicen nuestros clientes</h3>
+        <div class="container-comentario">
+          <article class="comentario">
+            <p class="nombre">Lautaro Cufre</p>
+            <div class="estrellas">⭐⭐⭐⭐⭐</div>
+            <p class="descripcion">
+              La mejor hamburguesa que probé. Recomiendo totalmente.
+            </p>
+          </article>
+          <article class="comentario">
+            <p class="nombre">Santiago Canepa</p>
+            <div class="estrellas">⭐⭐⭐⭐⭐</div>
+            <p class="descripcion">
+              Excelente atención y buenas burgas. Better than mc
+            </p>
+          </article>
         </div>
-        <h3>LTC 2025 | TODOS LOS DERECHOS RESERVADOS</h3>
+      </section>
+      <div class="section-hamburguesas-destacadas">
+        <h3>LAS MAS ELEGIDAS</h3>
+        <div class="hamburguesa-container-main">
+          <article class="hamburguesa">
+            <img class="destacada" src="./assets/cheeseburger.png" alt="" />
+          </article>
+          <article class="hamburguesa">
+            <img src="./assets/bbq-onion.png" alt="" />
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="container-img">
+          <img src="./assets/logo-ltc-icon.png" alt="" />
+        </div>
+        <div class="redes">
+          <a href="">INSTAGRAM</a>
+          <a href="">FACEBOOK</a>
+          <a href="">WHATSAPP</a>
+        </div>
+      </div>
+      <h3>© LTC BURGERS 2025 | TODOS LOS DERECHOS RESERVADOS</h3>
     </footer>
-</body>
+  </body>
 </html>
