@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="estilos.css" />
     <link
       rel="stylesheet"
-      href="'https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap'"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="icon" href="./assets/logo-ltc-icon.png" type="image/x-icon" />
     <title>LTC Burger's</title>
@@ -18,9 +22,10 @@
         <h2>LTC Burgers</h2>
       </div>
       <nav>
-        <a class="seleccionado" href="">Inicio</a>
+        <a class="seleccionado" href="./index.html">Inicio</a>
         <a href="./nosotros.html">Nosotros</a>
         <a href="./productos.html">Productos</a>
+        <a href="">Sucursales</a>
       </nav>
     </header>
     <main id="main">
@@ -37,17 +42,85 @@
         <div class="container-comentario">
           <article class="comentario">
             <p class="nombre">Lautaro Cufre</p>
-            <div class="estrellas">⭐⭐⭐⭐⭐</div>
-            <p class="descripcion">
-              La mejor hamburguesa que probé. Recomiendo totalmente.
-            </p>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="descripcion">
+              <input type="checkbox" class="leer-mas-toggle" id="leer-mas-1" />
+              <div class="descripcion-texto">
+                La mejor hamburguesa que probé. Recomiendo totalmente.
+              </div>
+              <label for="leer-mas-1" class="btn-leer">
+                <span class="leer-mas">Leer más</span>
+                <span class="leer-menos">Leer menos</span>
+              </label>
+            </div>
           </article>
           <article class="comentario">
             <p class="nombre">Santiago Canepa</p>
-            <div class="estrellas">⭐⭐⭐⭐⭐</div>
-            <p class="descripcion">
-              Excelente atención y buenas burgas. Better than mc
-            </p>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="descripcion">
+              <input type="checkbox" class="leer-mas-toggle" id="leer-mas-2" />
+              <div class="descripcion-texto">
+                Excelente atención y buenas burgas. Better than mc
+              </div>
+              <label for="leer-mas-2" class="btn-leer">
+                <span class="leer-mas">Leer más</span>
+                <span class="leer-menos">Leer menos</span>
+              </label>
+            </div>
+          </article>
+          <article class="comentario">
+            <p class="nombre">Victor Ungareli</p>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="descripcion">
+              <input type="checkbox" class="leer-mas-toggle" id="leer-mas-3" />
+              <div class="descripcion-texto">
+                Fui con mi novia el lunes, la atención de 10, la comida estuvo
+                lista rápido y estaba muy rica. Yo me pedí la hamburguesa LTC y
+                la recomiendo al 100% 🤓☝️🍔
+              </div>
+              <label for="leer-mas-3" class="btn-leer">
+                <span class="leer-mas">Leer más</span>
+                <span class="leer-menos">Leer menos</span>
+              </label>
+            </div>
+          </article>
+          <article class="comentario">
+            <p class="nombre">Elias Tebes</p>
+            <div class="estrellas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="descripcion">
+              <input type="checkbox" class="leer-mas-toggle" id="leer-mas-4" />
+              <div class="descripcion-texto">
+                Comida: 5 Servicio: 5 Ambiente: 5
+              </div>
+              <label for="leer-mas-3" class="btn-leer">
+                <span class="leer-mas">Leer más</span>
+                <span class="leer-menos">Leer menos</span>
+              </label>
+            </div>
           </article>
         </div>
       </section>
@@ -58,9 +131,15 @@
             <img class="destacada" src="./assets/cheeseburger.png" alt="" />
           </article>
           <article class="hamburguesa">
-            <img src="./assets/bbq-onion.png" alt="" />
+            <img class="destacada" src="./assets/cheeseburger-2.png" alt="" />
+          </article>
+          <article class="hamburguesa">
+            <img class="destacada" src="./assets/bbq-onion-2.png" alt="" />
           </article>
         </div>
+        <a href="./productos.html" class="btn-ver-menu"
+          >VER TODAS LAS HAMBURGUESAS</a
+        >
       </div>
     </main>
     <footer id="footer">
@@ -69,10 +148,29 @@
           <img src="./assets/logo-ltc-icon.png" alt="" />
         </div>
         <div class="redes">
-          <a href="">INSTAGRAM</a>
-          <a href="">FACEBOOK</a>
-          <a href="">WHATSAPP</a>
+          <a
+            href="https://www.instagram.com/ltc.burgers/"
+            target="_blank"
+            class="icon-link"
+          >
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100063671853998&locale=es_ES"
+            target="_blank"
+            class="icon-link"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="" target="_blank" class="icon-link"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
         </div>
+        <a
+          href="https://www.google.com/maps/place/LTC+Burger's/@-34.4559718,-58.6345241,17z/data=!4m10!1m2!2m1!1sltc!3m6!1s0x95bca596cdc0c871:0xf297d10b6af941a!8m2!3d-34.4559548!4d-58.6346223!15sCgNsdGNaBSIDbHRjkgEUaGFtYnVyZ2VyX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F11ww7cr_rz?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
+          target="_blank"
+          class="icon-link"
+          ><i class="fa-solid fa-map-location-dot"></i
+        ></a>
       </div>
       <h3>© LTC BURGERS 2025 | TODOS LOS DERECHOS RESERVADOS</h3>
     </footer>

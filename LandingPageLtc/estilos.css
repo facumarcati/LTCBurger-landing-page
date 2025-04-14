@@ -13,6 +13,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #f4b400;
 }
 
 .logo-area {
@@ -94,15 +95,16 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 70vh;
+  padding-top: 40px;
 }
 
 .container-titulo-main h2 {
-  font-size: 20vh;
+  font-size: 14vh;
 }
 
 .container-titulo-main h4 {
-  font-size: 5vh;
+  font-size: 4vh;
   padding: 10px;
 }
 
@@ -168,13 +170,16 @@ nav a {
 
 .comentario {
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
+  height: 100%;
+  min-height: 180px;
   background-color: #1c1c1c;
   border-radius: 12px;
   color: #fff;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  font-family: Arial, sans-serif;
 }
 
 .comentario:hover {
@@ -188,7 +193,7 @@ nav a {
 }
 
 .estrellas {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
   color: gold;
 }
@@ -196,6 +201,54 @@ nav a {
 .descripcion {
   font-size: 16px;
   line-height: 1.4;
+  position: relative;
+}
+
+.descripcion-texto {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.leer-mas-toggle {
+  display: none;
+}
+
+.btn-leer {
+  cursor: pointer;
+  color: #3498db;
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.btn-leer:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.leer-mas {
+  display: inline-block;
+}
+
+.leer-menos {
+  display: none;
+}
+
+.leer-mas-toggle:checked ~ .descripcion-texto {
+  -webkit-line-clamp: initial;
+}
+
+.leer-mas-toggle:checked ~ .btn-leer .leer-mas {
+  display: none;
+}
+
+.leer-mas-toggle:checked ~ .btn-leer .leer-menos {
+  display: inline-block;
 }
 
 .container-titulo {
@@ -209,7 +262,7 @@ nav a {
 .hamburguesa-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   padding: 20px;
   padding-bottom: 40px;
   flex-wrap: wrap;
@@ -219,7 +272,7 @@ nav a {
   padding-top: 30px;
   display: flex;
   gap: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .hamburguesa {
@@ -274,6 +327,47 @@ nav a {
   box-shadow: 0 0 10px gold;
 }
 
+.container-nuestra-historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  padding: 50px;
+}
+
+.container-nuestra-historia h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  text-decoration: underline;
+}
+
+.container-nuestra-historia h3 {
+  font-size: 22px;
+  width: 60%;
+}
+
+.container-nuestros-locales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  width: 100%;
+  padding-right: 80px;
+  padding-bottom: 50px;
+}
+
+.container-nuestros-locales h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  text-decoration: underline;
+}
+
+.container-nuestros-locales h3 {
+  font-size: 22px;
+  width: 60%;
+}
+
 #footer {
   width: 100%;
   background-color: #111;
@@ -281,24 +375,22 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0 10px 0;
+  padding: 10px 0 10px 0;
   font-family: "Rubik", sans-serif;
   border-top: 2px solid #f4b400;
 }
 
 .footer-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px;
   position: relative;
   box-sizing: border-box;
 }
 
 #footer .container-img img {
-  margin-top: 10px;
   width: 150px;
   height: 150px;
 }
@@ -329,8 +421,7 @@ nav a {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 40px;
-  font-size: 22px;
+  gap: 80px;
   align-items: center;
 }
 
@@ -338,7 +429,6 @@ nav a {
   color: #eee;
   text-decoration: none;
   transition: color 0.3s ease;
-  letter-spacing: 1px;
 }
 
 .redes a:hover {
@@ -351,4 +441,9 @@ nav a {
   text-align: center;
   color: #aaa;
   letter-spacing: 0.6px;
+}
+
+.icon-link {
+  color: white;
+  font-size: 60px;
 }
