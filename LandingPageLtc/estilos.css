@@ -100,10 +100,12 @@ nav a {
 }
 
 .container-titulo-main h2 {
+  text-align: center;
   font-size: 14vh;
 }
 
 .container-titulo-main h4 {
+  text-align: center;
   font-size: 4vh;
   padding: 10px;
 }
@@ -165,6 +167,7 @@ nav a {
 .container-comentario {
   display: flex;
   flex-wrap: wrap;
+
   gap: 30px;
 }
 
@@ -269,10 +272,12 @@ nav a {
 }
 
 .hamburguesa-container-main {
-  padding-top: 30px;
   display: flex;
-  gap: 30px;
-  padding-bottom: 30px;
+  justify-content: left;
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .hamburguesa {
@@ -288,29 +293,6 @@ nav a {
 .hamburguesa:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(218, 165, 32, 0.6); /* sombra dorada más intensa */
-}
-
-.hamburguesa-destacada {
-  width: 350px;
-  height: 380px;
-  background-color: #f4b400;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 46px 10px 20px 10px;
-}
-
-.hamburguesa-destacada img {
-  width: 320px;
-  height: 320px;
-  border-radius: 16px;
-}
-
-.hamburguesa-destacada h2 {
-  font-size: 30px;
-  padding: 6px 0 20px 0;
 }
 
 .hamburguesa img {
@@ -375,14 +357,14 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 20px 10px 20px;
   font-family: "Rubik", sans-serif;
   border-top: 2px solid #f4b400;
 }
 
 .footer-content {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -446,4 +428,63 @@ nav a {
 .icon-link {
   color: white;
   font-size: 60px;
+}
+
+@media (max-width: 600px) {
+  .container-titulo-main h2 {
+    font-size: 8vh;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-titulo-main h4 {
+    font-size: 3vh;
+  }
+
+  .hamburguesa-container-main {
+    flex-direction: column;
+  }
+
+  .comentario {
+    min-height: 100px;
+    max-width: 90%;
+  }
+
+  .hamburguesa-container-main {
+    justify-content: center;
+  }
+
+  .footer-content a {
+    font-size: 40px;
+  }
+
+  .redes a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #header > nav {
+    left: auto;
+    right: 0;
+    transform: none;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .redes {
+    gap: 40px;
+  }
+
+  #footer .container-img img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-content {
+    padding: 10px 0 20px 0;
+    gap: 20px;
+  }
 }
