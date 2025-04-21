@@ -44,7 +44,7 @@
   padding-left: 5px;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 8vh;
+  font-size: 5vh;
   font-weight: 400;
   letter-spacing: 2px;
   color: #ff4500;
@@ -128,13 +128,17 @@ nav a {
   background-color: bisque;
 }
 
+.title-section {
+  min-height: 90vh;
+}
+
 .container-titulo-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  padding-top: 40px;
+  height: 60vh;
+  padding-top: 30px;
 }
 
 .container-titulo-main h2 {
@@ -170,7 +174,11 @@ nav a {
   justify-content: center;
   align-items: center;
   height: 200px;
-  gap: 30px;
+  gap: 80px;
+}
+
+.container-button {
+  padding-bottom: 20px;
 }
 
 .btn-ver-menu {
@@ -215,9 +223,13 @@ nav a {
   margin: 30px 0;
 }
 
-.section-comentarios,
+.section-comentarios {
+  padding: 20px 20px 20px 40px;
+  font-size: 24px;
+}
+
 .section-hamburguesas-destacadas {
-  padding: 20px 0 20px 40px;
+  padding: 20px 20px 20px 40px;
   font-size: 24px;
 }
 
@@ -239,7 +251,7 @@ nav a {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #e13428;
-  text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
   line-height: 0.9;
   padding: 0 0 16px 0;
 }
@@ -393,7 +405,6 @@ nav a {
   justify-content: center;
   gap: 40px;
   padding: 20px;
-  padding-bottom: 40px;
   flex-wrap: wrap;
 }
 
@@ -414,11 +425,14 @@ nav a {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hamburguesa:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 40px rgba(218, 165, 32, 0.6); /* sombra dorada más intensa */
+  box-shadow: 0 10px 40px rgba(218, 165, 32, 0.6);
 }
 
 .hamburguesa img {
@@ -439,8 +453,20 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 100%;
-  padding: 50px;
+  width: 70%;
+  max-width: 1500px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.container-nuestros-locales {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 70%;
+  max-width: 1500px;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
 .container-nuestra-historia h2 {
@@ -458,39 +484,27 @@ nav a {
 
 .container-nuestra-historia h3,
 .container-nuestros-locales h3 {
-  font-size: 20px;
-  width: 60%;
+  font-size: 24px;
+  height: 100%;
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.5px;
   padding-top: 8px;
 }
 
-.contenido-historia {
-  display: flex;
-  gap: 20px;
-}
-
+.contenido-historia,
 .contenido-locales {
   display: flex;
   gap: 20px;
+  height: 500px;
 }
 
 .imagen-nuestra-historia-locales {
-  width: 40%;
+  min-width: 40%;
+  min-height: auto;
   background-color: white;
   border-radius: 10px;
   border: 1px solid #d99d00;
   box-shadow: 0 0 8px #d99d00;
-}
-
-.container-nuestros-locales {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: right;
-  width: 100%;
-  padding: 10px 50px 50px 50px;
 }
 
 .container-nuestros-locales h2 {
@@ -505,11 +519,6 @@ nav a {
   text-shadow: -7px 7px 0px rgba(0, 0, 0, 0.2);
   line-height: 0.9;
   padding: 0 0 16px 0;
-}
-
-.container-nuestros-locales h3 {
-  font-size: 22px;
-  width: 60%;
 }
 
 #footer {
@@ -592,40 +601,114 @@ nav a {
   letter-spacing: 0.6px;
 }
 
-@media (max-width: 600px) {
-  .container-titulo-main h2 {
-    font-size: 14vh;
-  }
-}
-
 @media (max-width: 500px) {
+  .container-titulo-main h2 {
+    font-size: 12vh;
+  }
+
   #header h2 {
     font-size: 4vh;
+    letter-spacing: 2px;
   }
 
   .container-titulo-main h4 {
     font-size: 4vh;
   }
 
-  .hamburguesa-container-main {
+  .section-comentarios {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .section-hamburguesas-destacadas {
+    padding: 30px 0 10px 0;
+    font-size: 18px;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .comentario {
-    min-height: 100px;
-    max-width: 90%;
+  .section-comentarios h3 {
+    font-size: 3rem;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
   }
 
-  .hamburguesa-container-main {
+  .titulo-comentarios {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .container-comentario {
+    gap: 15px;
     justify-content: center;
   }
 
+  .comentario {
+    max-width: 100%;
+    min-height: 150px;
+    padding: 15px;
+  }
+
+  .comentario:hover {
+    transform: none;
+  }
+
+  .section-hamburguesas-destacadas h3 {
+    font-size: 3.5rem;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 0 0 10px 0;
+    text-align: center; /* Centrar el texto en pantallas pequeñas */
+    width: 100%;
+  }
+
+  .hamburguesa-container-main {
+    flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    justify-content: center; /* Centrar en pantallas pequeñas */
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .hamburguesa-container {
+    gap: 20px;
+  }
+
+  .hamburguesa-main {
+    width: 85%;
+    max-width: 340px; /* Control de tamaño máximo */
+    height: auto;
+  }
+
+  .hamburguesa {
+    width: 85%;
+    width: 180px;
+    height: 180px;
+  }
+
+  .btn-ver-menu {
+    width: 200px;
+    height: 80px;
+    font-size: 22px;
+    margin: 0 auto;
+  }
+
+  .btn-ver-menu:hover {
+    transform: none;
+  }
+
+  .container-button {
+    padding: 20px 0 30px 0;
+  }
+
   .footer-content a {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .redes a {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
