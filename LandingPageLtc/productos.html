@@ -53,12 +53,57 @@
         <img src="./assets/logo-ltc-icon.png" alt="Logo LTC Burgers" />
         <h2>LTC Burger's</h2>
       </div>
-      <nav>
+      <!-- Menú normal (solo en pantallas grandes) -->
+      <nav class="d-none d-lg-flex">
         <a href="./index.html">Inicio</a>
         <a href="./nosotros.html">Nosotros</a>
         <a class="seleccionado" href="./productos.html">Productos</a>
-        <a href="">Contacto</a>
+        <a href="#">Contacto</a>
       </nav>
+
+      <!-- Menú hamburguesa (solo en pantallas chicas) -->
+      <div class="dropdown d-lg-none text-end">
+        <button
+          class="hamburger-btn"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <a class="dropdown-item seleccionado" href="./index.html">Inicio</a>
+          </li>
+          <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+          <li>
+            <a class="dropdown-item" href="./productos.html">Productos</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="redes-header">
+        <a
+          href="https://www.instagram.com/ltc.burgers/"
+          target="_blank"
+          class="icon-link-header"
+        >
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100063671853998&locale=es_ES"
+          target="_blank"
+          class="icon-link-header"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="" target="_blank" class="icon-link-header"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
     </header>
     <main id="main">
       <div class="container-titulo">
@@ -341,7 +386,7 @@
           href="https://www.google.com/maps/place/LTC+Burger's/@-34.4559718,-58.6345241,17z/data=!4m10!1m2!2m1!1sltc!3m6!1s0x95bca596cdc0c871:0xf297d10b6af941a!8m2!3d-34.4559548!4d-58.6346223!15sCgNsdGNaBSIDbHRjkgEUaGFtYnVyZ2VyX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F11ww7cr_rz?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
           target="_blank"
           class="icon-link"
-          ><i class="fa-solid fa-map-location-dot"></i
+          ><i class="fa-solid fa-map-location-dot mapa"></i
         ></a>
       </div>
       <h3>© LTC BURGERS 2025 | TODOS LOS DERECHOS RESERVADOS</h3>

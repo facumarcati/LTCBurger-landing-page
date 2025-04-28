@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilos.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
     />
@@ -45,12 +49,39 @@
         <img src="./assets/logo-ltc-icon.png" alt="Logo LTC Burgers" />
         <h2>LTC Burger's</h2>
       </div>
-      <nav>
+      <!-- Menú normal (solo en pantallas grandes) -->
+      <nav class="d-none d-lg-flex">
         <a class="seleccionado" href="./index.html">Inicio</a>
         <a href="./nosotros.html">Nosotros</a>
         <a href="./productos.html">Productos</a>
-        <a href="">Contacto</a>
+        <a href="#">Contacto</a>
       </nav>
+
+      <!-- Menú hamburguesa (solo en pantallas chicas) -->
+      <div class="dropdown d-lg-none text-end">
+        <button
+          class="hamburger-btn"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <a class="dropdown-item seleccionado" href="./index.html">Inicio</a>
+          </li>
+          <li><a class="dropdown-item" href="./nosotros.html">Nosotros</a></li>
+          <li>
+            <a class="dropdown-item" href="./productos.html">Productos</a>
+          </li>
+          <li><a class="dropdown-item" href="#">Contacto</a></li>
+        </ul>
+      </div>
+
       <div class="redes-header">
         <a
           href="https://www.instagram.com/ltc.burgers/"
@@ -171,15 +202,56 @@
       <div class="section-hamburguesas-destacadas">
         <h3>LAS MAS ELEGIDAS</h3>
         <div class="hamburguesa-container-main">
-          <article class="hamburguesa-main">
-            <img class="destacada" src="./assets/cheeseburger.png" alt="" />
-          </article>
-          <article class="hamburguesa-main">
+          <section class="hamburguesa text-white">
             <img class="destacada" src="./assets/cheeseburger-2.png" alt="" />
-          </article>
-          <article class="hamburguesa-main">
-            <img class="destacada" src="./assets/bbq-onion-2.png" alt="" />
-          </article>
+            <div class="estrella-producto-destacado">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="card-img-overlay">
+              <h5 class="card-title fw-bold text-uppercase">Cheeseburger</h5>
+              <p class="card-text">
+                Tres medallones de nuestro blend de 120 gr. cada uno. Dos fetas
+                de cheddar Milkaut por medallón. Acompañada de papas Simplot
+              </p>
+              <p class="card-text">
+                <small>Elegí tu tamaño: Simple, Doble o Triple</small>
+              </p>
+            </div>
+          </section>
+          <section class="hamburguesa text-white">
+            <img class="destacada" src="./assets/ltc-burger.png" alt="" />
+            <div class="estrella-producto-destacado">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="card-img-overlay">
+              <h5 class="card-title fw-bold text-uppercase">LTC Burger</h5>
+              <p class="card-text">
+                120 gr. de nuestro blend por medallón. Dos fetas de cheddar
+                Milkaut por medallón, bacon, cebolla crispy y LTC Sauce.
+                Acompañada de papas Simplot
+              </p>
+              <p class="card-text">
+                <small>Elegí tu tamaño: Simple, Doble o Triple</small>
+              </p>
+            </div>
+          </section>
+          <section class="hamburguesa text-white">
+            <img class="destacada" src="./assets/bm.png" alt="" />
+            <div class="estrella-producto-destacado">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="card-img-overlay">
+              <h5 class="card-title fw-bold text-uppercase">BM</h5>
+              <p class="card-text">
+                120 gr. de nuestro blend y doble feta de cheddar Milkaut por
+                medallón, lechuga, cebolla en cubos, pepinillos y LTC Sauce.
+                Acompañada de papas Simplot
+              </p>
+              <p class="card-text">
+                <small>Elegí tu tamaño: Simple, Doble o Triple</small>
+              </p>
+            </div>
+          </section>
         </div>
         <div class="container-button">
           <a href="./productos.html" class="btn-ver-menu">VER MENU COMPLETO</a>
@@ -213,10 +285,12 @@
           href="https://www.google.com/maps/place/LTC+Burger's/@-34.4559718,-58.6345241,17z/data=!4m10!1m2!2m1!1sltc!3m6!1s0x95bca596cdc0c871:0xf297d10b6af941a!8m2!3d-34.4559548!4d-58.6346223!15sCgNsdGNaBSIDbHRjkgEUaGFtYnVyZ2VyX3Jlc3RhdXJhbnTgAQA!16s%2Fg%2F11ww7cr_rz?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
           target="_blank"
           class="icon-link"
-          ><i class="fa-solid fa-map-location-dot"></i
+          ><i class="fa-solid fa-map-location-dot mapa"></i
         ></a>
       </div>
       <h3>© LTC BURGERS 2025 | TODOS LOS DERECHOS RESERVADOS</h3>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

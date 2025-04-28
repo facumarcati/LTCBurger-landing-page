@@ -69,6 +69,25 @@
   text-transform: uppercase;
 }
 
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding-right: 40px;
+}
+
+.hamburger-btn span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
 .redes-header {
   gap: 30px;
   padding-right: 30px;
@@ -213,6 +232,7 @@ nav a {
   background-color: #e13428;
   width: 80%;
   margin: 20px 0;
+  opacity: 1;
 }
 
 .linea-gruesa-productos {
@@ -231,7 +251,6 @@ nav a {
 
 .section-hamburguesas-destacadas {
   padding: 20px 20px 20px 40px;
-  font-size: 24px;
 }
 
 .section-comentarios h3 {
@@ -419,6 +438,7 @@ nav a {
 .hamburguesa-container-main {
   display: flex;
   justify-content: left;
+  position: relative;
   gap: 28px;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -564,6 +584,7 @@ nav a {
   font-size: 20px;
   height: auto;
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
   letter-spacing: 0.5px;
   padding-top: 8px;
   margin: 0;
@@ -684,6 +705,15 @@ nav a {
 .icon-link {
   color: white;
   font-size: 60px;
+  text-decoration: none;
+}
+
+.mapa {
+  transition: all 0.3s ease;
+}
+
+.mapa:hover {
+  transform: scale(1.15);
 }
 
 #footer > h3 {
@@ -691,6 +721,11 @@ nav a {
   text-align: center;
   color: #aaa;
   letter-spacing: 0.6px;
+}
+
+.mapa {
+  text-decoration: none;
+  color: inherit; /* hereda el color del texto padre */
 }
 
 @media (max-width: 992px) {
@@ -794,15 +829,19 @@ nav a {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
   .redes-header {
-    visibility: hidden;
+    display: none !important;
   }
 }
 
 @media (max-width: 576px) {
   .container-titulo-main h2 {
     font-size: 12vh;
+  }
+
+  .container-titulo {
+    text-align: center;
   }
 
   #header h2 {
@@ -883,8 +922,8 @@ nav a {
 
   .hamburguesa {
     width: 85%;
-    width: 180px;
-    height: 180px;
+    width: 240px;
+    height: 240px;
   }
 
   .estrella-producto-destacado {
