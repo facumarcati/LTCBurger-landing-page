@@ -427,6 +427,18 @@ nav a {
   display: inline-block;
 }
 
+.container-aviso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.container-aviso h2 {
+  font-size: 24px;
+}
+
 .container-titulo {
   display: flex;
   justify-content: center;
@@ -974,7 +986,7 @@ nav a {
   }
 
   .tamaño {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .estrella-producto-destacado {
