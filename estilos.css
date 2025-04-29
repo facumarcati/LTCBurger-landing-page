@@ -73,19 +73,58 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 40px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  padding-right: 40px;
+  transition: all 0.3s ease;
 }
 
 .hamburger-btn span {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #f4b400;
   border-radius: 2px;
+}
+
+.dropdown-menu {
+  background-color: #111 !important; /* Fondo negro */
+  border: 2px solid #f4b400 !important; /* Borde amarillo */
+  border-radius: 0 !important; /* Sin bordes redondeados */
+  box-shadow: 0 10px 10px rgba(20, 255, 16, 0.3) !important; /* Sombra verde neón */
+  padding: 8px 0 !important;
+  margin-top: 15px !important; /* Espacio entre botón y menú */
+  box-shadow: none !important;
+}
+
+.dropdown-item {
+  font-family: "Poppins", sans-serif !important;
+  color: white !important; /* Letras blancas */
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  padding: 10px 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.dropdown-item.seleccionado {
+  color: #f4b400 !important; /* Color amarillo */
+}
+
+.dropdown-item:hover {
+  background-color: #222 !important; /* Fondo un poco más claro al hacer hover */
+  color: #f4b400 !important; /* Color amarillo al hacer hover */
+}
+
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+  width: 0;
+  height: 2px;
+  background-color: #f4b400;
+  transition: width 0.3s ease;
 }
 
 .redes-header {
@@ -924,6 +963,18 @@ nav a {
     width: 85%;
     width: 240px;
     height: 240px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+
+  .tamaño {
+    font-size: 13px;
   }
 
   .estrella-producto-destacado {
