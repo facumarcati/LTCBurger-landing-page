@@ -779,21 +779,15 @@ nav a {
   color: inherit; /* hereda el color del texto padre */
 }
 
-@media (max-width: 992px) {
-  #header > nav {
-    left: auto;
-    right: 0;
-    transform: none;
-    padding-right: 30px;
+@media (min-width: 1201px) {
+  .container-titulo-main h2 {
+    font-size: 10rem;
   }
 
-  .container-nuestra-historia h3,
-  .container-nuestros-locales h3 {
-    font-size: 18px;
-    height: 100%;
-    font-family: "Source Sans Pro", sans-serif;
-    letter-spacing: 0.5px;
-    padding-top: 8px;
+  #header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    padding-left: 5px;
   }
 }
 
@@ -880,7 +874,110 @@ nav a {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+  #header h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .logo-area {
+    gap: 20px;
+  }
+
+  .container-titulo-main h2 {
+    font-size: 20vh;
+    padding-top: 20px;
+  }
+
+  .container-titulo-main h4 {
+    font-size: 2rem;
+    padding: 40px 20px 0 20px;
+  }
+
+  .container-nuestra-historia {
+    padding-top: 80px;
+  }
+
+  .contenido-locales {
+    gap: 0;
+  }
+
+  .contenido-historia {
+    gap: 0;
+  }
+
+  .container-aviso h2 {
+    padding: 0 10%;
+  }
+
+  .container-button-main {
+    gap: 40px;
+    padding-top: 20px;
+    height: 240px;
+  }
+
+  .container-comentario {
+    padding: 20px 0;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  .footer-content {
+    padding: 10px 20px;
+  }
+
+  .icon-link {
+    font-size: 50px;
+  }
+
+  .mapa {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  #header > nav {
+    left: auto;
+    right: 0;
+    transform: none;
+    padding-right: 30px;
+  }
+
+  #header h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .container-titulo-main h2 {
+    font-size: 22vh;
+    padding-top: 20px;
+  }
+
+  .container-titulo-main h4 {
+    font-size: 2.5rem;
+    padding: 20px 40px;
+  }
+
+  .container-button-main {
+    gap: 40px;
+    padding-top: 20px;
+  }
+
+  .container-nuestra-historia h3,
+  .container-nuestros-locales h3 {
+    font-size: 18px;
+    height: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 0.5px;
+    padding-top: 8px;
+  }
+
   .redes-header {
     display: none !important;
   }
