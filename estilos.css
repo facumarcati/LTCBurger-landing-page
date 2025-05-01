@@ -52,6 +52,7 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   padding: 0;
+  margin: 0;
 }
 
 #header h2:hover {
@@ -89,18 +90,18 @@
 }
 
 .dropdown-menu {
-  background-color: #111 !important; /* Fondo negro */
-  border: 2px solid #f4b400 !important; /* Borde amarillo */
-  border-radius: 0 !important; /* Sin bordes redondeados */
-  box-shadow: 0 10px 10px rgba(20, 255, 16, 0.3) !important; /* Sombra verde neón */
+  background-color: #111 !important;
+  border: 2px solid #f4b400 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 10px 10px rgba(20, 255, 16, 0.3) !important;
   padding: 8px 0 !important;
-  margin-top: 15px !important; /* Espacio entre botón y menú */
+  margin-top: 15px !important;
   box-shadow: none !important;
 }
 
 .dropdown-item {
   font-family: "Poppins", sans-serif !important;
-  color: white !important; /* Letras blancas */
+  color: white !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
   padding: 10px 15px !important;
@@ -108,12 +109,12 @@
 }
 
 .dropdown-item.seleccionado {
-  color: #f4b400 !important; /* Color amarillo */
+  color: #f4b400 !important;
 }
 
 .dropdown-item:hover {
-  background-color: #222 !important; /* Fondo un poco más claro al hacer hover */
-  color: #f4b400 !important; /* Color amarillo al hacer hover */
+  background-color: #222 !important;
+  color: #f4b400 !important;
 }
 
 .dropdown-item::after {
@@ -201,7 +202,7 @@ nav a {
 
 .container-titulo-main h2 {
   text-align: center;
-  font-size: 26vh;
+  font-size: 16rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   letter-spacing: 5px;
@@ -776,12 +777,12 @@ nav a {
 
 .mapa {
   text-decoration: none;
-  color: inherit; /* hereda el color del texto padre */
+  color: inherit;
 }
 
-@media (min-width: 1201px) {
+@media (max-width: 1400px) {
   .container-titulo-main h2 {
-    font-size: 10rem;
+    font-size: 16rem;
   }
 
   #header h2 {
@@ -804,6 +805,10 @@ nav a {
     text-transform: uppercase;
     transition: all 0.3s ease;
     padding: 0;
+  }
+
+  .container-titulo-main h2 {
+    font-size: 14rem;
   }
 
   .container-nuestra-historia,
@@ -955,7 +960,7 @@ nav a {
   }
 
   .container-titulo-main h2 {
-    font-size: 22vh;
+    font-size: 20vh;
     padding-top: 20px;
   }
 
@@ -998,7 +1003,7 @@ nav a {
   }
 
   .container-titulo-main h4 {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 
   .section-comentarios {
